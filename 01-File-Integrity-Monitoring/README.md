@@ -182,12 +182,12 @@ All tests are performed inside the monitored directory `C:\Users\Windows\testfim
 ### ✅ Create
 
 ```powershell
-New-Item -Path "C:\Users\Windows\testfim\testfile.txt" -ItemType File
+New-Item -Path "C:\Users\Win\testfim\testfile.txt" -ItemType File
 ```
 
 **Alert generated:**
 
-![FIM Windows Create](./images/fim-windows-create.png)
+![FIM Windows Create](./images/fim-win-create.png)
 
 ```
 Rule: 554 - File added to the system.
@@ -199,12 +199,12 @@ File: C:\Users\Windows\testfim\testfile.txt
 ### ✏️ Modify
 
 ```powershell
-Add-Content -Path "C:\Users\Windows\testfim\testfile.txt" -Value "hello"
+Add-Content -Path "C:\Users\Win\testfim\testfile.txt" -Value "hello"
 ```
 
 **Alert generated:**
 
-![FIM Windows Modify](./images/fim-windows-modify.png)
+![FIM Windows Modify](./images/fim-win-modify.png)
 
 ```
 Rule: 550 - Integrity checksum changed.
@@ -217,12 +217,12 @@ Changed attributes: md5, sha1, sha256, size
 ### 🗑️ Delete
 
 ```powershell
-Remove-Item -Path "C:\Users\Windows\testfim\testfile.txt"
+Remove-Item -Path "C:\Users\Win\testfim\testfile.txt"
 ```
 
 **Alert generated:**
 
-![FIM Windows Delete](./images/fim-windows-delete.png)
+![FIM Windows Delete](./images/fim-win-delete.png)
 
 ```
 Rule: 553 - File deleted.
