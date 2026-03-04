@@ -19,11 +19,6 @@ These projects cover threat detection, file integrity monitoring, malware analys
 | # | Project | Tools Used | Status |
 |---|---------|-----------|--------|
 | 01 | [File Integrity Monitoring](./01-File-Integrity-Monitoring/) | Wazuh, FIM | ✅ Complete |
-| 02 | Malware Detection + VirusTotal + Auto-Response | Wazuh, CDB, VirusTotal, Active Response | 🔜 Coming Soon |
-| 03 | SIEM & Log Analysis | Wazuh, OpenSearch | 🔜 Coming Soon |
-| 04 | Threat Hunting | Wazuh, Sigma Rules | 🔜 Coming Soon |
-| 05 | Incident Response | Wazuh, Active Response | 🔜 Coming Soon |
-| 06 | Network Traffic Analysis | Wireshark, Suricata | 🔜 Coming Soon |
 
 ---
 
