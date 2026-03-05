@@ -85,7 +85,7 @@ FIM is configured inside the `<syscheck>` block in `ossec.conf` on each agent. A
   <directories realtime="yes" check_all="yes">/home/wazuh-agent/testfim</directories>
 </syscheck>
 ```
-
+![linux-config](./images/linux-config.png)
 **Restart the agent:**
 
 ```bash
@@ -103,6 +103,7 @@ sudo systemctl restart wazuh-agent
   <directories recursion_level="4" realtime="yes" check_all="yes" report_changes="yes">C:\Users\Windows\testfim</directories>
 </syscheck>
 ```
+![windows-config](./images/windows.png)
 
 **Restart the agent (PowerShell as Administrator):**
 
