@@ -64,6 +64,10 @@ Navigate to `https://<WAZUH_DASHBOARD_IP_ADDRESS>` and log in with:
 
 Go to **Agents Management > Summary** and click **Deploy new agent**. Follow the on-screen steps to select the OS and register each agent.
 
+![Deploy-Agents](./images/Deploy-Agents1.png)
+![Deploy-Agents](./images/Deploy-Agents2.png)
+![Deploy-Agents](./images/Deploy-Agents3.png)
+![Deploy-Agents](./images/Deploy-Agents4.png)
 ---
 
 ## ⚙️ Configuration
