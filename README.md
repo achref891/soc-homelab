@@ -18,8 +18,8 @@ These projects cover threat detection, file integrity monitoring, malware analys
 
 | # | Project | Tools Used | Status |
 |---|---------|-----------|--------|
-| 01 | [File Integrity Monitoring](./01-File_Integrity_Monitoring/) | Wazuh, FIM | ✅ Complete |
-
+| 01 | [File Integrity Monitoring](./01-%20File_Integrity_Monitoring/) | Wazuh, FIM | ✅ Complete |
+| 02 | [SSH Brute Force Detection & Automated Response](./02-%20SSH_Brute_Force_Detection_Automated_Response/) | Wazuh, Hydra | ✅ Complete |
 
 ---
 
