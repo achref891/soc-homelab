@@ -49,10 +49,7 @@
 > All activity was performed in a **fully isolated virtual lab**. No production systems were involved.
 
 ## Architecture :
-
-
 ![Deploy](./images/lab_architecture.png)
-
 
 ---
 
@@ -100,7 +97,6 @@ Hydra systematically attempts every password in the list against the SSH service
 ## 📈 Detection & Alert Escalation
 
 Wazuh did not fire a single alert in isolation — it **built a case**. Each failed login contributed to a growing confidence score, culminating in a Critical Level 12 alert the moment the attacker succeeded.
-
 ![Deploy](./images/Alerts.png)
 
 ---
@@ -115,7 +111,6 @@ Wazuh did not fire a single alert in isolation — it **built a case**. Each fai
 | **Severity** | Level 5 |
 | **Times Fired** | 89 |
 | **MITRE Technique** | T1110.001 — Password Guessing |
-
 ![Deploy-Agents](./images/SSH_Authentication_Failure.png)
 
 **Trigger Log:**
@@ -134,7 +129,6 @@ Each failed attempt is logged by `sshd` and decoded by Wazuh's SSH decoder. At t
 | **Severity** | Level 8 |
 | **Times Fired** | 117 |
 | **MITRE Technique** | T1110 — Brute Force |
-
 ![Deploy-Agents](./images/Maximum_Authentication.png)
 
 **Trigger Log:**
@@ -153,7 +147,6 @@ SSH's built-in `MaxAuthTries` threshold was reached — confirming the source IP
 | **Severity** | Level 5 |
 | **Times Fired** | 115 |
 | **MITRE Technique** | T1110 — Brute Force |
-
 ![Deploy-Agents](./images/User_Authentication_Failure.png)
 
 **Trigger Log:**
@@ -171,7 +164,6 @@ Disconnecting authenticating user linux-agent 192.168.1.166 port 36858: Too many
 | **Severity** | Level 5 |
 | **Times Fired** | 99 |
 | **MITRE Technique** | T1110.001 — Password Guessing |
-
 ![Deploy-Agents](./images/User_Login_Failed.png)
 
 **Trigger Log:**
@@ -190,7 +182,6 @@ PAM-level failures provide an additional corroboration layer, strengthening Wazu
 | **Severity** | Level 10 |
 | **Times Fired** | 93 |
 | **MITRE Technique** | T1110 — Brute Force |
-
 ![Deploy-Agents](./images/Multiple_Authentication.png)
 
 **Trigger Log:**
@@ -210,7 +201,6 @@ Volume of failures far beyond what any legitimate user would generate — brute 
 | **Times Fired** | 1 |
 | **MITRE Techniques** | T1110 — Brute Force · T1078 — Valid Accounts |
 | **MITRE Tactics** | Credential Access · Initial Access · Persistence · Privilege Escalation · Defense Evasion |
-
 ![Deploy-Agents](./images/Brute_Force_Attack_Successful.png)
 
 **Trigger Log:**
@@ -228,7 +218,6 @@ Wazuh's composite rule **40112** fired the moment it detected a **successful log
 | **Rule ID** | 5501 |
 | **Severity** | Level 3 |
 | **MITRE Technique** | T1078 — Valid Accounts |
-
 ![Deploy-Agents](./images/SSH_Session_Established.png)
 
 **Trigger Log:**
@@ -270,7 +259,6 @@ Automatically **block the attacker's IP address** the moment brute force behavio
 
 ---
 ### 🔥 Active Response Flow
-
 ![Deploy-Agents](./images/diagram.png)
 
 ### Step 1 — Create Custom Detection Rules
@@ -342,11 +330,9 @@ hydra -l linux-agent -P passwords.txt 192.168.1.164 ssh -V
 ✅ `firewall-drop` executes automatically  
 ✅ Attacker IP is blocked — further connection attempts are dropped  
 ✅ Attack is terminated without manual intervention  
-
 ![Deploy-Agents](./images/wazuh_dashboard.png)
 
 ---
-
 ---
 
 ## 🛡️ Defensive Recommendations
