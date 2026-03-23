@@ -48,7 +48,7 @@
 
 > All activity was performed in a **fully isolated virtual lab**. No production systems were involved.
 
-**Architecture:**
+## Architecture :
 
 
 ![Deploy](./images/lab_architecture.png)
