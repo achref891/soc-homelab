@@ -18,7 +18,7 @@ These projects cover threat detection, file integrity monitoring, malware analys
 
 | # | Project | Tools Used | Status |
 |---|---------|-----------|--------|
-| 01 | [File Integrity Monitoring](./01-File-Integrity-Monitoring/) | Wazuh, FIM | ✅ Complete |
+| 01 | [File Integrity Monitoring](./01-File_Integrity_Monitoring/) | Wazuh, FIM | ✅ Complete |
 
 
 ---
