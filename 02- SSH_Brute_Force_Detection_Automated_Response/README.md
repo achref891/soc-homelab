@@ -147,6 +147,7 @@ SSH's built-in `MaxAuthTries` threshold was reached — confirming the source IP
 | **Severity** | Level 5 |
 | **Times Fired** | 115 |
 | **MITRE Technique** | T1110 — Brute Force |
+
 ![Deploy-Agents](./images/User_Authentication_Failure.png)
 
 **Trigger Log:**
@@ -164,6 +165,7 @@ Disconnecting authenticating user linux-agent 192.168.1.166 port 36858: Too many
 | **Severity** | Level 5 |
 | **Times Fired** | 99 |
 | **MITRE Technique** | T1110.001 — Password Guessing |
+
 ![Deploy-Agents](./images/User_Login_Failed.png)
 
 **Trigger Log:**
@@ -182,6 +184,7 @@ PAM-level failures provide an additional corroboration layer, strengthening Wazu
 | **Severity** | Level 10 |
 | **Times Fired** | 93 |
 | **MITRE Technique** | T1110 — Brute Force |
+
 ![Deploy-Agents](./images/Multiple_Authentication.png)
 
 **Trigger Log:**
@@ -201,6 +204,7 @@ Volume of failures far beyond what any legitimate user would generate — brute 
 | **Times Fired** | 1 |
 | **MITRE Techniques** | T1110 — Brute Force · T1078 — Valid Accounts |
 | **MITRE Tactics** | Credential Access · Initial Access · Persistence · Privilege Escalation · Defense Evasion |
+
 ![Deploy-Agents](./images/Brute_Force_Attack_Successful.png)
 
 **Trigger Log:**
@@ -218,6 +222,7 @@ Wazuh's composite rule **40112** fired the moment it detected a **successful log
 | **Rule ID** | 5501 |
 | **Severity** | Level 3 |
 | **MITRE Technique** | T1078 — Valid Accounts |
+
 ![Deploy-Agents](./images/SSH_Session_Established.png)
 
 **Trigger Log:**
