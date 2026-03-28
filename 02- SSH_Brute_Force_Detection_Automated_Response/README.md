@@ -111,6 +111,7 @@ Wazuh did not fire a single alert in isolation — it **built a case**. Each fai
 | **Severity** | Level 5 |
 | **Times Fired** | 89 |
 | **MITRE Technique** | T1110.001 — Password Guessing |
+
 ![Deploy-Agents](./images/SSH_Authentication_Failure.png)
 
 **Trigger Log:**
@@ -129,6 +130,7 @@ Each failed attempt is logged by `sshd` and decoded by Wazuh's SSH decoder. At t
 | **Severity** | Level 8 |
 | **Times Fired** | 117 |
 | **MITRE Technique** | T1110 — Brute Force |
+
 ![Deploy-Agents](./images/Maximum_Authentication.png)
 
 **Trigger Log:**
