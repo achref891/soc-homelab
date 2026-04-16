@@ -1,4 +1,4 @@
-🛡️ Agentic AI Security Automation Lab
+## **🛡️ Agentic AI Security Automation Lab**
 
 ## **1. Introduction**
 
@@ -376,9 +376,6 @@ For example:
 ```
 
 Since the environment is deployed internally using containers, SSL verification is disabled for testing purposes.
-
-> **Figure X.17**: Configuration of the HTTP Request node in n8n
-> 
 
 ![n8nhttp.png](./images/n8nhttp.png)
 
