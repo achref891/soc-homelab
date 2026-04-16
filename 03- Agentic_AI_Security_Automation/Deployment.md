@@ -163,7 +163,7 @@ sudo systemctl restart wazuh-agent
 sudo systemctl status wazuh-agent
 ```
  
-![audit.png](./images/audit.png) 
+![audit.png](./Images/audit.png) 
 
 ---
 
@@ -178,7 +178,7 @@ sudo tail -f /var/log/audit/audit.log
 The appearance of real-time audit events confirms that the auditing subsystem is operational and ready for Wazuh ingestion.
 
 
-![auditlog.png](./images/auditlog.png) 
+![auditlog.png](./Images/auditlog.png) 
 
 ---
 
@@ -205,7 +205,7 @@ sudo apt install -y powershell
 pwsh --version
 ```
 
-![pwsh.png](./images/pwsh.png)
+![pwsh.png](./Images/pwsh.png)
 
 ---
 
@@ -244,7 +244,7 @@ sudo pwsh-Command 'Import-Module Invoke-AtomicRedTeam; Invoke-AtomicTest All -Pa
 
 The generated activity is expected to produce observable logs and alerts that will be collected by Wazuh.
 
-![Atomic red team.png](./images/Atomic_red_team.png)
+![Atomic red team.png](./Images/Atomic_red_team.png)
 
 ---
 
@@ -278,7 +278,7 @@ Once installed, Postman is opened and configured by:
 - importing the provided **Postman collection**,
 - importing the associated **environment variables**.
 
-![Postman3.png](./images/Postman3.png)
+![Postman3.png](./Images/Postman3.png)
 ---
 
 ### **8.3 Testing Alert Retrieval Queries**
@@ -293,7 +293,7 @@ This endpoint allows searching and retrieving alerts indexed by Wazuh.
 
 Its use in Postman provides a practical understanding of the structure of Wazuh alert data before integrating it into the AI workflow.
 
-![Postman9.png](./images/Postman9.png)
+![Postman9.png](./Images/Postman9.png)
 
 ---
 
@@ -327,7 +327,7 @@ The following nodes are used:
 
 This architecture allows a user to query the environment in natural language and receive summarized cybersecurity insights.
 
-![n8n26.png](./images/n8n26.png)
+![n8n26.png](./Images/n8n26.png)
 
 ---
 
@@ -343,7 +343,7 @@ The generated key is then configured inside n8n as a new credential.
 
 This step allows the AI model to be used for alert interpretation and summarization.
 
-![image.png](./images/n8n9.png)
+![image.png](./Images/n8n9.png)
 
 ---
 
@@ -359,7 +359,7 @@ https://single-node-wazuh.indexer-1:9200/wazuh-alerts-4.x-*/_search
 
 Authentication is configured using the **Indexer username and password** obtained from the Postman environment.
 
-![image.png](./images/n8n16.png)
+![image.png](./Images/n8n16.png)
 
 The request method must be set to:
 
@@ -377,9 +377,9 @@ For example:
 
 Since the environment is deployed internally using containers, SSL verification is disabled for testing purposes.
 
-![n8nhttp.png](./images/n8nhttp.png)
+![n8nhttp.png](./Images/n8nhttp.png)
 
-![image.png](./images/n8n19.png)
+![image.png](./Images/n8n19.png)
 
 ---
 
@@ -396,7 +396,7 @@ The prompt instructs the agent to:
 
 This prompt represents the first logic layer of the intelligent SOC assistant.
 
-![image.png](./images/n8n20.png) 
+![image.png](./Images/n8n20.png) 
 
 ---
 
@@ -412,7 +412,7 @@ Can you retrieve the last 20 alerts and summarize them?
 
 If the workflow is correctly configured, the AI agent sends a request to the Wazuh Indexer, retrieves the corresponding alert data, and generates a summarized interpretation.
 
-![image.png](./images/n8n24.png)
+![image.png](./Images/n8n24.png)
 
 ---
 
