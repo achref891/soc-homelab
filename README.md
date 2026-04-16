@@ -8,9 +8,10 @@ These projects cover threat detection, file integrity monitoring, malware analys
 
 ## 👨‍💻 About Me
 
-- 🎓 Cybersecurity student
-- 🔭 Focused on Blue Team / SOC Analyst skills
-- 🛠️ Tools I work with: Wazuh, VirusTotal, OpenSearch, Windows Event Logs, Linux
+- 🛡️ Cybersecurity student focused on Blue Team operations
+- 🔍 Passionate about threat detection, log analysis & SOC automation
+- ⚙️ Building real-world security monitoring & incident response labs
+- 🤖 Exploring AI-driven security automation (SOAR + Agentic workflows)
 
 ---
 
@@ -20,6 +21,7 @@ These projects cover threat detection, file integrity monitoring, malware analys
 |---|---------|-----------|--------|
 | 01 | [File Integrity Monitoring](./01-%20File_Integrity_Monitoring/) | Wazuh, FIM | ✅ Complete |
 | 02 | [SSH Brute Force Detection & Automated Response](./02-%20SSH_Brute_Force_Detection_Automated_Response/) | Wazuh, Hydra | ✅ Complete |
+| 03 | [Agentic AI Security Automation](./03-%20Agentic_AI_Security_Automation/) | Wazuh, n8n, Docker,Postman | 🚀 Active Development |
 
 ---
 
@@ -34,6 +36,8 @@ These projects cover threat detection, file integrity monitoring, malware analys
 ---
 
 ## 🔗 Connect
+
+**LinkedIn:** [LinkedIn](https://www.linkedin.com/in/saidani-achref/)
 
 Feel free to follow along as I add more projects!
 
