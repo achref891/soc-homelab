@@ -78,7 +78,7 @@ This ensures that the host system is ready to clone and manage the project repos
 The project files are stored in a GitHub repository. The following commands are used to clone the repository and access the lab setup directory:
 
 ```
-git clone https://github.com/achref891/soc-homelab/03-%20Agentic_AI_Security_Automation/wazuh-n8n-lab-setup.git
+git clone https://github.com/achref891/soc-homelab.git
 cd soc-homelab/Agentic_AI_Security_Automation/wazuh-n8n-lab-setup
 ```
 
